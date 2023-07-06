@@ -1,0 +1,146 @@
+/* The begining of The code */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D192C;
+    height :100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    background-color: #15263F;
+    width: 327px;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.main-image {
+    width: 278px;
+    height: 278px;
+    border-radius: 8px;
+}
+
+.eye-image {
+    display: none;
+}
+
+.h1 {
+    color: white;
+    font-size: 22px;
+    font-family: 'outfit';
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.p-1 {
+    margin-top: 12px;
+    color: #8BACD9;
+    font-family: 'outfit';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.crystal-and-time-box {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.p-2 {
+    color: #00FFF8;
+    margin-right: 95px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'outfit';
+}
+
+.p-3 {
+    color: #8BACD9;
+    font-size: 15px;
+    font-family: 'outfit';
+    font-weight: 400;
+}
+
+hr {
+    color: #2E405A;
+    border: 1px solid;
+}
+
+.creator-box {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.p-4 {
+    color: #8BACD9;
+    margin-left: 16px;
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: 400;
+    font-family: 'outfit';
+}
+
+span {
+    color: white;
+    font-size: 15px;
+    font-family: 400;
+    font-family: 'outfit';
+}
+
+@media screen and (min-width: 480px) {  
+    .main-image {
+        cursor: pointer;
+    }
+
+    span:hover {
+        color: #00FFF8;
+        cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+    .h1:hover {
+        color: #00FFF8;
+        cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+    .eye-image {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-image:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    .head-box {
+        width: 278px;
+        height: 278px;
+        border-radius: 8px;
+        background-color: #00fff8;
+        position: relative;
+        cursor: pointer;
+    }
+
+}
+
+/* End of code */
