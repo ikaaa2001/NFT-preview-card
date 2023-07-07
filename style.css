@@ -103,6 +103,11 @@ span {
 @media screen and (min-width: 480px) {  
     .main-image {
         cursor: pointer;
+        position: absolute;
+    }
+
+    .main-image:hover {
+
     }
 
     span:hover {
@@ -120,25 +125,28 @@ span {
     }
 
     .eye-image {
-        display: block;
+        display: none;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    .main-image:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-    }
-
-    .head-box {
+    .sky-box {
         width: 278px;
         height: 278px;
         border-radius: 8px;
-        background-color: #00fff8;
         position: relative;
         cursor: pointer;
+    }
+
+    .sky-box:hover {
+        background-color: rgb(0, 255, 248, 0.5);
+        transition: 0.3s;
+    }
+
+    .sky-box:hover .eye-image {
+        display: block;
     }
 
 }
